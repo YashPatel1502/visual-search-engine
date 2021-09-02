@@ -1,0 +1,37 @@
+{% extends "public/templates/base_template.html" %}
+
+{% block title %}Similar items{% endblock %}
+
+{% block main %}
+<div class="container py-5">
+  <!-- For Demo Purpose-->
+  <header class="text-center mb-5">
+    <h3 class="display-4 font-weight-bold" style="color: #F53163 !important">Similar items..</h3>
+    <p class="font-italic text-muted mb-0">Select any image to get more recommendations!!!</p>
+  </header>
+
+
+  <!-- First Row [Prosucts]-->
+
+  <div class="row pb-5 mb-4">
+    {% for item in items %}
+    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 mt-5">
+      <!-- Card-->
+      <div class="card rounded shadow-sm border-0">
+        <div class="card-body p-4"><img
+            src="{{url_for('send_image', filename=item['title'])}}" alt="{{ item['title'] }}"
+            class="img-fluid d-block mx-auto mb-3" id="custimg" onclick="route(this.alt)">
+          <h6> <a href="{{ item['URL'] }}" class="text-dark">{{ item['title'][:35]}}...</a></h6>
+          <p class="small text-muted font-italic">{{ item['desc'][:55] }}...</p>
+          <ul class="list-inline small">
+            {% for i in range(item['rating']) %}
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success" style="color: #F53163 !important"></i></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
