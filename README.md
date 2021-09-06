@@ -7,9 +7,9 @@
 
 I created a Visual Search engine using Flask(Python) to find the similar products we want. It uses convolutional neural networks to extract feature maps of images which are present in the Database and recommend the similar products to the user based on the user's input using Nearest neighbors algorithm. 
 
-## Watch Video Demo
+## Heroku Link
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/53hdAGl2Zu4/0.jpg)](https://www.youtube.com/watch?v=53hdAGl2Zu4)
+https://yash-visual-search-engine.herokuapp.com/
 
 ## How to run with your data?
 
