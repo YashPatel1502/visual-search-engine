@@ -1,4 +1,4 @@
-# Visual-Search
+# Visual-Search-Engine
 
 [![Generic badge](https://img.shields.io/badge/Python-3.6-blue.svg)](https://www.python.org/)
 [![Generic badge](https://img.shields.io/badge/Framework-flask-green.svg)](https://flask.palletsprojects.com/en/1.1.x/)
