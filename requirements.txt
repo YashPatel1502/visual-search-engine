@@ -9,7 +9,7 @@ grpcio==1.39.0
 h5py==3.1.0
 
 jedi>=0.16
-Jinja2==2.11.2
+
 
 Keras==2.6
 Keras-Applications==1.0.6
